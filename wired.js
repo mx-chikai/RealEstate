@@ -52,7 +52,7 @@ muxbots.onFeedPull((callback) => {
       muxbots.newResponse()
         .addWebpage(muxbots.newWebpage()
           .setTitle(article.title)
-          .setUrl(article.url)
+          .setURL(article.url)
           .setImage(article.imageurl))
         .send(callback)
     }
@@ -81,7 +81,7 @@ muxbots.onFeedPull((callback) => {
         muxbots.newResponse()
           .addWebpage(muxbots.newWebpage()
             .setTitle(article.title)
-            .setUrl(article.url)
+            .setURL(article.url)
             .setImage(article.imageurl))
           .send(callback)
       }
