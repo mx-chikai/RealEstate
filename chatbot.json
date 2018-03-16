@@ -1,8 +1,9 @@
 {
-    "muxbots_lib_version": "1.0",
-    "type": "feedbot",
-    "title": "WIRED",
-    "intro_message": "WIRED is where tomorrow is realized. It is the essential source of information and ideas that make sense of a world in constant transformation.",
-    "image": "icon.png",
-    "source_url": "wired.js"
+  "muxbots_lib_version": "1.0",
+  "type": "feedbot",
+  "title": "WIRED",
+  "intro_message": "WIRED is where tomorrow is realized. It is the essential source of information and ideas that make sense of a world in constant transformation.",
+  "image": "icon.png",
+  "source_url": "wired.js",
+  "published_url": "http://chikailabs.com/wired/chatbot.json"
 }
