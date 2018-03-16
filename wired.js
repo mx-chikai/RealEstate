@@ -47,7 +47,8 @@ muxbots.onFeedPull((callback) => {
 
     if (article === undefined) {
       muxbots.newResponse()
-        .send(callback, 'No more new articles.')
+        .addNoResultsMessage('No more new articles.')
+        .send(callback)
     } else {
       muxbots.newResponse()
         .addWebpage(muxbots.newWebpage()
@@ -76,7 +77,8 @@ muxbots.onFeedPull((callback) => {
 
       if (article === undefined) {
         muxbots.newResponse()
-          .send(callback, 'No more new articles.')
+          .addNoResultsMessage('No more new articles.')
+          .send(callback)
       } else {
         muxbots.newResponse()
           .addWebpage(muxbots.newWebpage()
