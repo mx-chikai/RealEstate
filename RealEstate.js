@@ -63,10 +63,16 @@ muxbots.onFeedPull((callback) => {
 
       var rssFeed = { 'articles': [] }
       for (let i = 1; i < rssItems.length; i++) {
+        let imageurl;
+        if (rssItems[i].search('<media:content') >= 0 ) {
+          imageurl = rssItems[i].split('<media:content')[1].split('url="')[1].split('"')[0]
+        } else {
+          imageurl = 'https://marketing.move.com/wp-content/uploads/2013/07/rdc.jpg'
+        }
         rssFeed.articles.push({
           'title': `${rssItems[i].split('<title>')[1].split('<')[0]}`,
           'url': `${rssItems[i].split('<link>')[1].split('<')[0]}`,
-          'imageurl': `${rssItems[i].split('<media:content')[1].split('url="')[1].split('"')[0]}`
+          'imageurl': imageurl
         })
       }
 
