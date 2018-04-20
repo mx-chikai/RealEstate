@@ -58,7 +58,7 @@ muxbots.onFeedPull((callback) => {
         .send(callback)
     }
   } else {
-    muxbots.http.get('https://feedity.com/realtor-com/UlNXVVBbVg.rss', function (response) {
+    muxbots.http.get('http://fetchrss.com/rss/5ad9edad8a93f84f0c8b4567892005963.xml', function (response) {
       var rssItems = response.data.split('<item>')
 
       var rssFeed = { 'articles': [] }
