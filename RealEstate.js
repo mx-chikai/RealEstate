@@ -66,7 +66,7 @@ muxbots.onFeedPull((callback) => {
         rssFeed.articles.push({
           'title': `${rssItems[i].split('<title>')[1].split('<')[0]}`,
           'url': `${rssItems[i].split('<link>')[1].split('<')[0]}`,
-          'imageurl': `${rssItems[i].split('<media:thumbnail')[1].split('url="')[1].split('"')[0]}`
+          'imageurl': `${rssItems[i].split('<media:content')[1].split('url="')[1].split('"')[0]}`
         })
       }
 
